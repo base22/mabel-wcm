@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"noImplicitAny": false,
+		"removeComments": false
+	},
+	"exclude": [
+		"build",
+		"dist",
+		"node_modules",
+		"typings/global",
+		"typings/index.d.ts"
+	]
+}

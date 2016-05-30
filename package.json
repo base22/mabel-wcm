@@ -1,0 +1,57 @@
+{
+  "name": "mabel-wcm",
+  "version": "0.1.0",
+  "description": "SDK to consume IBM WCM's REST API",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/base22/mabel-wcm.git"
+  },
+  "author": "MiguelAraCo <miguel.aragon@base22.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/base22/mabel-wcm/issues"
+  },
+  "homepage": "https://github.com/base22/mabel-wcm#readme",
+  "private": true,
+  "devDependencies": {
+    "del": "^2.2.0",
+    "graceful-fs": "^4.1.4",
+    "gulp": "^3.9.1",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-tslint": "^5.0.0",
+    "gulp-typescript": "^2.13.5",
+    "gulp-util": "^3.0.7",
+    "jspm": "^0.17.0-beta.16",
+    "run-sequence": "^1.2.1",
+    "tslint": "^3.10.2"
+  },
+  "peerDependencies": {
+    "mabel": "0.1.0"
+  },
+  "jspm": {
+    "name": "mabel-wcm",
+    "main": "index",
+    "devDependencies": {
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
+      "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.16"
+    },
+    "overrides": {
+      "npm:typescript@1.8.10": {
+        "browser": {},
+        "map": {
+          "buffer": "@empty",
+          "child_process": "@empty",
+          "fs": "@empty",
+          "path": "@empty",
+          "process": "@empty",
+          "readline": "@empty"
+        }
+      }
+    }
+  }
+}
